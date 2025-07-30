@@ -8,8 +8,8 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
-from config.data import TEST_CONFIG
-from facade.login import LoginFacade
+from UI.config.data import TEST_CONFIG
+from UI.facade.login import LoginFacade
 
 @pytest.fixture(scope="function")
 def driver(request):

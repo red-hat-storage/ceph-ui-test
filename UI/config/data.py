@@ -7,7 +7,7 @@ class DashboardConfig:
     password: str
 
 TEST_CONFIG = DashboardConfig(
-    url="https://10.0.66.223:8443/",
+    url="https://10.0.65.77:8443/",
     username="admin",
     password="admin@123"
 )
