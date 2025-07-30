@@ -3,11 +3,13 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class LoginFacade:
     def __init__(self, driver):
         self.driver = driver
 
     def login(self, username, password):
+
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.XPATH, "//input[@type='submit' and @value='Log in']").click()

@@ -28,6 +28,7 @@ def driver(request):
         chrome_options.add_argument("--ignore-certificate-errors")
         chrome_options.accept_insecure_certs = True
 
+
         try:
             wdriver = webdriver.Remote(
                 command_executor=f"http://{hub_host}:4444/wd/hub",
@@ -97,3 +98,4 @@ def screenshot():
             print(f"[❌] Failed to capture screenshot: {e}")
         return path
     return take_screenshot
+
